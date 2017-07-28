@@ -1,83 +1,27 @@
 <div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="http://www.legittees.com/wp-content/uploads/Neptune_Indigo_W_SS_crop-750x750.jpg" alt="..." class="image-responsive">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p class="description">Readymade you probably haven't heard of them distillery echo park. Health food truck chambray artisan kinfolk whatever mixtape. Gochujang kickstarter lyft pitchfork copper mug raw denim cray taiyaki etsy. Franzen shaman keytar, synth iPhone enamel. Selvage pop-up tumblr fashion axe, direct trade af drinking vinegar jianbing kombucha occupy cronut. </p>
-        <div class="clearfix">
-          <div class="price pull-left">$25</div>
-            <a href="#" class="btn btn-success pull-right" role="button">Button</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="http://www.legittees.com/wp-content/uploads/Neptune_Indigo_W_SS_crop-750x750.jpg" alt="..." class="image-responsive">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p class="description">Readymade you probably haven't heard of them distillery echo park. Health food truck chambray artisan kinfolk whatever mixtape. Gochujang kickstarter lyft pitchfork copper mug raw denim cray taiyaki etsy. Franzen shaman keytar, synth iPhone enamel. Selvage pop-up tumblr fashion axe, direct trade af drinking vinegar jianbing kombucha occupy cronut. </p>
-        <div class="clearfix">
-          <div class="price pull-left">$25</div>
-            <a href="#" class="btn btn-success pull-right" role="button">Button</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="http://www.legittees.com/wp-content/uploads/Neptune_Indigo_W_SS_crop-750x750.jpg" alt="..." class="image-responsive">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p class="description">Readymade you probably haven't heard of them distillery echo park. Health food truck chambray artisan kinfolk whatever mixtape. Gochujang kickstarter lyft pitchfork copper mug raw denim cray taiyaki etsy. Franzen shaman keytar, synth iPhone enamel. Selvage pop-up tumblr fashion axe, direct trade af drinking vinegar jianbing kombucha occupy cronut. </p>
-        <div class="clearfix">
-          <div class="price pull-left">$25</div>
-            <a href="#" class="btn btn-success pull-right" role="button">Button</a>
-        </div>
-      </div>
+  <div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
+    <div id="success" class="alert alert-success" {{#if noMessages}}hidden{{/if}}>
+      {{ successMsg }}
     </div>
   </div>
 </div>
 
-<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="http://www.legittees.com/wp-content/uploads/Neptune_Indigo_W_SS_crop-750x750.jpg" alt="..." class="image-responsive">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p class="description">Readymade you probably haven't heard of them distillery echo park. Health food truck chambray artisan kinfolk whatever mixtape. Gochujang kickstarter lyft pitchfork copper mug raw denim cray taiyaki etsy. Franzen shaman keytar, synth iPhone enamel. Selvage pop-up tumblr fashion axe, direct trade af drinking vinegar jianbing kombucha occupy cronut. </p>
-        <div class="clearfix">
-          <div class="price pull-left">$25</div>
-            <a href="#" class="btn btn-success pull-right" role="button">Button</a>
+{{# each products }}
+  <div class = "row">
+    {{# each this }}
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="{{ this.imagePath }}" alt="navy blue men's t-shirt">
+        <div class="caption">
+          <h3>{{ this.title }}</h3>
+          <p>{{ this.description }}</p>
+          <div class="clearfix">
+            <div class="price pull-left">${{ this.price }}</div>
+            <div><a href="/add-cart/{{this._id}}" class="btn btn-success pull-right" role="button">Add to Cart</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="http://www.legittees.com/wp-content/uploads/Neptune_Indigo_W_SS_crop-750x750.jpg" alt="..." class="image-responsive">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p class="description">Readymade you probably haven't heard of them distillery echo park. Health food truck chambray artisan kinfolk whatever mixtape. Gochujang kickstarter lyft pitchfork copper mug raw denim cray taiyaki etsy. Franzen shaman keytar, synth iPhone enamel. Selvage pop-up tumblr fashion axe, direct trade af drinking vinegar jianbing kombucha occupy cronut. </p>
-        <div class="clearfix">
-          <div class="price pull-left">$25</div>
-            <a href="#" class="btn btn-success pull-right" role="button">Button</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="http://www.legittees.com/wp-content/uploads/Neptune_Indigo_W_SS_crop-750x750.jpg" alt="..." class="image-responsive">
-      <div class="caption">
-        <h3>Thumbnail label</h3>
-        <p class="description">Readymade you probably haven't heard of them distillery echo park. Health food truck chambray artisan kinfolk whatever mixtape. Gochujang kickstarter lyft pitchfork copper mug raw denim cray taiyaki etsy. Franzen shaman keytar, synth iPhone enamel. Selvage pop-up tumblr fashion axe, direct trade af drinking vinegar jianbing kombucha occupy cronut. </p>
-        <div class="clearfix">
-          <div class="price pull-left">$25</div>
-            <a href="#" class="btn btn-success pull-right" role="button">Button</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+    {{/each}}
+{{/each}}
